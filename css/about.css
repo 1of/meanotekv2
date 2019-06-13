@@ -69,8 +69,25 @@ body {
 }
 
 .about-intro .intro-text p {
-  font: 1.35rem 'Play', sans-serif;
+  font: 2.4rem 'Play', sans-serif;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin: 40px 0;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #fcfcfc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #333, 6px 6px 0 #111;
+  /* end of 4 level deep dark shadow */
+}
+
+.about-intro .intro-text p:hover {
+  /* CSS3 Transform Effect */
+  -webkit-transform: scale(1.05);
+  /* Safari & Chrome */
+  -moz-transform: scale(1.05);
+  /* Firefox */
+  -o-transform: scale(1.05);
+  /* Opera */
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #111, 6px 6px 0 #111;
+  /* end of 4 level deep dark shadow */
 }
 
 .about-intro .achievments {
@@ -156,7 +173,7 @@ body {
 .our-goals {
   background-color: #111;
   background-image: url(../public/img/about_page/dots-bg.png);
-  background-position: left bottom;
+  background-position: left top;
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
@@ -187,20 +204,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .our-goals .features-content .features-icon img {
   width: 45px;
   height: 42px;
-  margin: auto;
+  margin: auto 0;
 }
 
 .our-goals .features-content h3 {
   font-size: 1rem;
-  font-weight: bold;
   margin: auto 0;
   text-align: left;
   width: 75%;
@@ -215,104 +228,38 @@ body {
   line-height: 1.5;
 }
 
-/* OUR Artificial Intelligence
+.our-goals .main-results .col-sm-6 {
+  padding-left: 0;
+}
+
+.company-intro {
+  background-image: url(../public/img/about_page/careers-desktop-bg.svg);
+  background-position: 0% 100%;
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+.company-intro .company-photo {
+  height: 60vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company-intro h4 {
+  margin-bottom: 2rem;
+}
+
+/* OUR History Intelligence
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.our-ai p,
+.our-history {
+  background-image: url(../public/img/about_page/careers-desktop-bg2.svg), url(../public/img/about_page/careers-desktop-bg.svg), linear-gradient(225deg, #111, #111);
+  background-position: 50% -2%, 50% 50%, 0px 0px;
+  background-size: 100%, auto, auto;
+  background-repeat: no-repeat, no-repeat, repeat;
+}
+
 .our-history p {
-  font-size: 1.3rem;
-  text-align: justify;
-}
-
-/* OUR AMBITION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-section.our-ambition {
-  padding: 0;
-  overflow: unset;
-}
-
-section.our-ambition::before {
-  content: '';
-  background: #7cb5ea;
-  background: -webkit-gradient(linear, left top, left bottom, from(#111), color-stop(50%, #7cb5ea), to(#111));
-  background: linear-gradient(#111, #7cb5ea 50%, #111);
-  position: absolute;
-  left: 0;
-  width: 30%;
-  top: 0;
-  height: 100%;
-  display: block;
-}
-
-section.our-ambition::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  top: 20%;
-  left: 90%;
-  height: 300px;
-  background-image: url(../public/img/about_page/dotted-pattern.png);
-  display: block;
-}
-
-section.our-ambition .img-sec {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  height: auto;
-  margin: -5px;
-  border-radius: 100%;
-  overflow: hidden;
-  border: solid 50px #111;
-}
-
-section.our-ambition .img-sec span {
-  background: rgba(124, 181, 234, 0.8);
-  color: #111;
-  position: absolute;
-  padding: 12px 67px;
-  top: 32%;
-  left: 0;
-  font-size: 1rem;
-  text-align: center;
-}
-
-section.our-ambition .img-sec img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-section.our-ambition .img-sec::after {
-  content: '';
-  width: 80%;
-  height: 80%;
-  left: 0;
-  top: 0px;
-  margin: 10%;
-  position: absolute;
-  display: block;
-  border: dashed 1px #fff;
-  -webkit-animation: rotating 30s linear infinite;
-          animation: rotating 30s linear infinite;
-  border-radius: 100%;
-  -webkit-transform: translate(-8%, -8%);
-          transform: translate(-8%, -8%);
-  -ms-transform: translate(-8%, -8%);
-}
-
-section.our-ambition:hover .img-sec {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-section.our-ambition .company-ambition {
-  padding-top: 40px;
-}
-
-section.our-ambition .company-ambition p {
   font-size: 1.3rem;
   text-align: justify;
 }
@@ -341,31 +288,14 @@ section.our-ambition .company-ambition p {
 
 /* OUR APPROACH
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.our-approach .fa-quote-left,
-.our-approach .fa-quote-right {
-  color: #7cb5ea;
-}
-
 .our-approach .ts-box-g {
   border: none;
   font-size: 1.3rem;
   text-align: justify;
   background-color: #fff;
   color: #000;
-}
-
-.our-approach .desc-img {
-  position: absolute;
-  top: 50px;
-  left: -300px;
-  -webkit-animation: 5s infinite alternate smallopacity;
-          animation: 5s infinite alternate smallopacity;
-}
-
-.our-approach .desc-img img {
-  border-radius: 20px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  -webkit-box-shadow: 0 0 50px white;
+          box-shadow: 0 0 50px white;
 }
 
 .our-approach .row > div:first-child {
@@ -573,7 +503,7 @@ section.our-partners p {
   right: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #111), color-stop(50%, #395772), color-stop(98%, #111));
   background: linear-gradient(#111 2%, #395772 50%, #111 98%);
-  opacity: 0.9;
+  opacity: 0.2;
   height: 100%;
   z-index: 1;
 }
@@ -599,12 +529,13 @@ section.our-partners p {
 
 .reviews .reviews-slider:after {
   content: '\f10e';
-  color: rgba(0, 0, 0, 0.1);
+  color: #3a93c3;
   font-family: 'FontAwesome';
   font-size: 9rem;
   position: absolute;
   top: 80px;
   right: 150px;
+  opacity: 0.3;
 }
 
 .reviews .review-item {
@@ -719,6 +650,9 @@ section.our-partners p {
 }
 
 .join-us .ts-box-g {
+  background-image: url(../public/img/about_page/cs-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 700px;
   padding-right: 0;
   display: -webkit-box;
@@ -787,37 +721,12 @@ section.our-partners p {
   width: 100%;
 }
 
-@media (max-width: 480px) {
-  section.our-ambition .img-sec {
-    overflow: unset;
-    border-width: 1px;
-    margin-bottom: 40px;
-  }
-  section.our-ambition .img-sec span {
-    color: #fff;
-    font-size: 1rem;
-    top: 0 !important;
-    bottom: 0;
-    padding: 15% 4% !important;
-  }
-}
-
 @media (max-width: 767px) {
   .about-page h1 {
     font-size: 3.5rem;
   }
   .about-page h2 {
     font-size: 2.3rem;
-  }
-  section.our-ambition .img-sec {
-    border: solid 25px #111;
-  }
-  section.our-ambition .img-sec span {
-    padding: 15% 15%;
-    top: 24%;
-  }
-  section.our-ambition::before {
-    opacity: 0.5;
   }
   .our-approach .desc-img {
     left: 0;

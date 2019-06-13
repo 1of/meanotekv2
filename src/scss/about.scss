@@ -67,8 +67,23 @@ body {
     background: linear-gradient(#000, #111);
     .intro-text {
         p {
-            font: 1.35rem 'Play', sans-serif;
+            font: 2.4rem 'Play', sans-serif;
+            text-align: center;
+            transition: 0.2s;
             margin: 40px 0;
+            text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #fcfcfc,
+                /* end of 2 level deep grey shadow */ 3px 3px 0 #444,
+                4px 4px 0 #444, 5px 5px 0 #333, 6px 6px 0 #111; /* end of 4 level deep dark shadow */
+            &:hover {
+                /* CSS3 Transform Effect */
+
+                -webkit-transform: scale(1.05); /* Safari & Chrome */
+                -moz-transform: scale(1.05); /* Firefox */
+                -o-transform: scale(1.05); /* Opera */
+                text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc,
+                    /* end of 2 level deep grey shadow */ 3px 3px 0 #444,
+                    4px 4px 0 #444, 5px 5px 0 #111, 6px 6px 0 #111; /* end of 4 level deep dark shadow */
+            }
         }
     }
     .achievments {
@@ -123,7 +138,7 @@ body {
 .our-goals {
     background-color: $color-dark-black;
     background-image: url(../public/img/about_page/dots-bg.png);
-    background-position: left bottom;
+    background-position: left top;
     background-repeat: no-repeat;
     color: #fff;
     position: relative;
@@ -147,16 +162,14 @@ body {
         .features-icon {
             width: 25%;
             display: flex;
-            justify-content: center;
             img {
                 width: 45px;
                 height: 42px;
-                margin: auto;
+                margin: auto 0;
             }
         }
         h3 {
             font-size: 1rem;
-            font-weight: bold;
             margin: auto 0;
             text-align: left;
             // text-transform: uppercase;
@@ -169,100 +182,39 @@ body {
             font-size: 1.3rem;
             line-height: 1.5;
         }
+        .col-sm-6 {
+            padding-left: 0;
+        }
     }
 }
-/* OUR Artificial Intelligence
+
+.company-intro {
+    background-image: url(../public/img/about_page/careers-desktop-bg.svg);
+    background-position: 0% 100%;
+    background-repeat: repeat;
+    background-size: 50%;
+    .company-photo {
+        height: 60vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    h4 {
+        margin-bottom: 2rem;
+    }
+}
+/* OUR History Intelligence
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.our-ai,
 .our-history {
+    background-image: url(../public/img/about_page/careers-desktop-bg2.svg),
+        url(../public/img/about_page/careers-desktop-bg.svg),
+        linear-gradient(225deg, #111, #111);
+    background-position: 50% -2%, 50% 50%, 0px 0px;
+    background-size: 100%, auto, auto;
+    background-repeat: no-repeat, no-repeat, repeat;
     p {
         font-size: 1.3rem;
         text-align: justify;
-    }
-}
-/* OUR AMBITION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-section.our-ambition {
-    padding: 0;
-    overflow: unset;
-    &::before {
-        content: '';
-        background: $color-light-blue;
-        background: linear-gradient(
-            $color-dark-black,
-            $color-light-blue 50%,
-            $color-dark-black
-        );
-        position: absolute;
-        left: 0;
-        width: 30%;
-        top: 0;
-        height: 100%;
-        display: block;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        width: 300px;
-        top: 20%;
-        left: 90%;
-        height: 300px;
-        background-image: url(../public/img/about_page/dotted-pattern.png);
-        display: block;
-    }
-    .img-sec {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        transition: all 0.5s ease-in-out;
-        height: auto;
-        margin: -5px;
-        border-radius: 100%;
-        overflow: hidden;
-        border: solid 50px $color-dark-black;
-        span {
-            background: $color-blue-ts;
-            color: $color-dark-black;
-            position: absolute;
-            padding: 12px 67px;
-            top: 32%;
-            left: 0;
-            font-size: 1rem;
-            text-align: center;
-        }
-        img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-        &::after {
-            content: '';
-            width: 80%;
-            height: 80%;
-            left: 0;
-            top: 0px;
-            margin: 10%;
-            position: absolute;
-            display: block;
-            border: dashed 1px #fff;
-            animation: rotating 30s linear infinite;
-            border-radius: 100%;
-            transform: translate(-8%, -8%);
-            -ms-transform: translate(-8%, -8%);
-        }
-    }
-    &:hover {
-        .img-sec {
-            transform: scale(1.05);
-        }
-    }
-    .company-ambition {
-        padding-top: 40px;
-        p {
-            font-size: 1.3rem;
-            text-align: justify;
-        }
     }
 }
 
@@ -274,29 +226,17 @@ section.our-ambition {
         transform: rotate(360deg);
     }
 }
+
 /* OUR APPROACH
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-approach {
-    .fa-quote-left,
-    .fa-quote-right {
-        color: $color-light-blue;
-    }
     .ts-box-g {
         border: none;
         font-size: 1.3rem;
         text-align: justify;
         background-color: #fff;
         color: #000;
-    }
-    .desc-img {
-        position: absolute;
-        top: 50px;
-        left: -300px;
-        animation: 5s infinite alternate smallopacity;
-        img {
-            border-radius: 20px;
-            filter: invert(100%);
-        }
+        box-shadow: 0 0 50px rgba(255, 255, 255, 1);
     }
 
     .row > div:first-child {
@@ -465,7 +405,7 @@ section.our-partners {
             #395772 50%,
             $color-dark-black 98%
         );
-        opacity: 0.9;
+        opacity: 0.2;
         height: 100%;
         z-index: 1;
     }
@@ -484,12 +424,13 @@ section.our-partners {
 
         &:after {
             content: '\f10e';
-            color: $color-white-ts;
+            color: $color-blue;
             font-family: 'FontAwesome';
             font-size: 9rem;
             position: absolute;
             top: 80px;
             right: 150px;
+            opacity: 0.3;
         }
     }
     .review-item {
@@ -586,6 +527,9 @@ section.our-partners {
         }
     }
     .ts-box-g {
+        background-image: url(../public/img/about_page/cs-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 700px;
         padding-right: 0;
         display: flex;
@@ -643,23 +587,6 @@ section.our-partners {
     width: 100%;
 }
 
-@media (max-width: 480px) {
-    section.our-ambition {
-        .img-sec {
-            overflow: unset;
-            border-width: 1px;
-            margin-bottom: 40px;
-            span {
-                color: #fff;
-                font-size: 1rem;
-                top: 0 !important;
-                bottom: 0;
-                padding: 15% 4% !important;
-            }
-        }
-    }
-}
-
 @media (max-width: 767px) {
     .about-page {
         h1 {
@@ -667,18 +594,6 @@ section.our-partners {
         }
         h2 {
             font-size: 2.3rem;
-        }
-    }
-    section.our-ambition {
-        .img-sec {
-            border: solid 25px $color-dark-black;
-            span {
-                padding: 15% 15%;
-                top: 24%;
-            }
-        }
-        &::before {
-            opacity: 0.5;
         }
     }
     .our-approach .desc-img {
