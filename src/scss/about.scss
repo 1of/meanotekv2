@@ -69,11 +69,11 @@ body {
         p {
             font: 2.4rem 'Play', sans-serif;
             text-align: center;
+            text-transform: uppercase;
             transition: 0.2s;
             margin: 40px 0;
-            text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #fcfcfc,
-                /* end of 2 level deep grey shadow */ 3px 3px 0 #444,
-                4px 4px 0 #444, 5px 5px 0 #333, 6px 6px 0 #111; /* end of 4 level deep dark shadow */
+            text-shadow: 1px 1px 0 #bbb, 2px 2px 0 #ccc,
+                /* end of 2 level deep grey shadow */ 3px 3px 0 #444; /* end of 4 level deep dark shadow */
             &:hover {
                 /* CSS3 Transform Effect */
 
