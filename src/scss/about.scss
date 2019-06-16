@@ -72,17 +72,20 @@ body {
             text-transform: uppercase;
             transition: 0.2s;
             margin: 40px 0;
-            text-shadow: 1px 1px 0 #bbb, 2px 2px 0 #ccc,
-                /* end of 2 level deep grey shadow */ 3px 3px 0 #444; /* end of 4 level deep dark shadow */
+            //text-shadow: 1px 1px 0 #0060ff;
+            background: url(../public/img/about_page/blue_stripes3.jpg);
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* Animate Background Image */
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: aitf 15s linear infinite;
+             /* Activate hardware acceleration for smoother animations */
+            -webkit-transform: translate3d(0,0,0);
+            -webkit-backface-visibility: hidden;
             &:hover {
                 /* CSS3 Transform Effect */
 
-                -webkit-transform: scale(1.05); /* Safari & Chrome */
-                -moz-transform: scale(1.05); /* Firefox */
-                -o-transform: scale(1.05); /* Opera */
-                text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc,
-                    /* end of 2 level deep grey shadow */ 3px 3px 0 #444,
-                    4px 4px 0 #444, 5px 5px 0 #111, 6px 6px 0 #111; /* end of 4 level deep dark shadow */
+               // text-shadow: 1px 1px 0 $color-blue;
             }
         }
     }
@@ -130,6 +133,11 @@ body {
     100% {
         color: $color-light-blue;
     }
+}
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }
 
 /* OUR GOALS
