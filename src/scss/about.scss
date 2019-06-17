@@ -26,6 +26,7 @@ body {
 
     h1 {
         font-size: 4.5rem;
+        margin-bottom: 4rem;
     }
     h2 {
         font-size: 2.5rem;
@@ -117,6 +118,9 @@ body {
             font-size: 90px;
             color: $color-light-blue;
             animation: changebluecolor 4s linear 2;
+        }
+        img {
+            width: 150px;
         }
         strong {
             font-size: 2rem;

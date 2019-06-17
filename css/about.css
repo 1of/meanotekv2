@@ -20,6 +20,7 @@ body {
 
 .about-page h1 {
   font-size: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .about-page h2 {
@@ -138,6 +139,10 @@ body {
   color: #7cb5ea;
   -webkit-animation: changebluecolor 4s linear 2;
           animation: changebluecolor 4s linear 2;
+}
+
+.about-intro .achievments img {
+  width: 150px;
 }
 
 .about-intro .achievments strong {
