@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Play:400,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i&display=swap");
 html,
 body {
   width: 100%;
@@ -70,25 +71,14 @@ body {
 }
 
 .about-intro .intro-text p {
-  font: 2.4rem 'Play', sans-serif;
+  font: 2.4rem 'Open Sans', sans-serif;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  margin: 40px 0;
-  background: url(../public/img/about_page/blue_stripes3.jpg);
-  -webkit-background-clip: text;
-  background-clip: text;
+  margin: 60px 0;
   /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 15s linear infinite;
   /* Activate hardware acceleration for smoother animations */
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-}
-
-.about-intro .intro-text p:hover {
-  /* CSS3 Transform Effect */
 }
 
 .about-intro .achievments {
@@ -519,11 +509,21 @@ section.our-partners p {
   width: 20%;
   height: 100%;
   -webkit-animation: slide-bub 60s linear infinite;
+          animation: slide-bub 60s linear infinite;
   position: absolute;
   right: 0;
 }
 
 @-webkit-keyframes slide-bub {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -5000px;
+  }
+}
+
+@keyframes slide-bub {
   from {
     background-position: 0 0;
   }

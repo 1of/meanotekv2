@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i&display=swap');
 $color-blue: #3a93c3;
 $color-light-blue: #7cb5ea;
 $color-link-blue: #2f9eef;
@@ -68,26 +69,21 @@ body {
     background: linear-gradient(#000, #111);
     .intro-text {
         p {
-            font: 2.4rem 'Play', sans-serif;
+            font: 2.4rem 'Open Sans', sans-serif;
             text-align: center;
             text-transform: uppercase;
             transition: 0.2s;
-            margin: 40px 0;
+            margin: 60px 0;
             //text-shadow: 1px 1px 0 #0060ff;
-            background: url(../public/img/about_page/blue_stripes3.jpg);
-            -webkit-background-clip: text;
-            background-clip: text;
+            //  background: url(../public/img/about_page/blue_stripes3.jpg);
+            // -webkit-background-clip: text;
+            // background-clip: text;
             /* Animate Background Image */
-            -webkit-text-fill-color: transparent;
-            -webkit-animation: aitf 15s linear infinite;
-             /* Activate hardware acceleration for smoother animations */
-            -webkit-transform: translate3d(0,0,0);
-            -webkit-backface-visibility: hidden;
-            &:hover {
-                /* CSS3 Transform Effect */
-
-               // text-shadow: 1px 1px 0 $color-blue;
-            }
+            // -webkit-text-fill-color: transparent;
+            // -webkit-animation: aitf 15s linear infinite;
+            /* Activate hardware acceleration for smoother animations */
+            //-webkit-transform: translate3d(0, 0, 0);
+            //-webkit-backface-visibility: hidden;
         }
     }
     .achievments {
@@ -140,8 +136,12 @@ body {
 }
 
 @keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /* OUR GOALS
@@ -398,13 +398,13 @@ section.our-partners {
         background-size: 100% auto;
         width: 20%;
         height: 100%;
-        -webkit-animation: slide-bub 60s linear infinite;
+        animation: slide-bub 60s linear infinite;
         position: absolute;
         right: 0;
     }
 }
 
-@-webkit-keyframes slide-bub {
+@keyframes slide-bub {
     from {
         background-position: 0 0;
     }
