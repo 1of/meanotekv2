@@ -73,7 +73,6 @@ body {
 .about-intro .intro-text p {
   font: 2.4rem 'Open Sans', sans-serif;
   text-align: center;
-  text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin: 60px 0;
@@ -103,8 +102,8 @@ body {
           flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-size: 1.1rem;
-  height: 250px;
+  font-size: 1.4rem;
+  height: 150px;
   margin: 10px;
   -webkit-box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
           box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
