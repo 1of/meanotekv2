@@ -63,6 +63,18 @@ body {
   border-radius: 1px;
 }
 
+.about-page p {
+  font-size: 1.3rem;
+}
+
+.about-page .mb-10 {
+  margin-bottom: 10px;
+}
+
+.about-page .mb-20 {
+  margin-bottom: 20px;
+}
+
 /* ABOUT INTRO
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about-intro {
@@ -267,6 +279,19 @@ body {
   padding-left: 0;
 }
 
+.our-goals ul {
+  font-size: 1.5rem;
+}
+
+.our-goals ul li {
+  margin-bottom: 1rem;
+}
+
+.our-goals ul i.fa {
+  color: #7cb5ea;
+  padding-right: 10px;
+}
+
 .company-intro {
   background-image: url(../public/img/about_page/careers-desktop-bg.svg);
   background-position: 0% 100%;
@@ -276,7 +301,7 @@ body {
 
 .company-intro .company-photo {
   height: 60vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -285,11 +310,33 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Document list
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.document-links {
+  background-color: #fff;
+  color: #111;
+}
+
+section.document-links .well {
+  background-color: transparent;
+  padding: 19px 0;
+  border-color: transparent;
+}
+
+section.document-links .well a {
+  display: inline;
+}
+
+section.document-links .btn {
+  color: #111;
+  background-color: transparent;
+}
+
 /* OUR History Intelligence
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-history {
   background-image: url(../public/img/about_page/careers-desktop-bg2.svg), url(../public/img/about_page/careers-desktop-bg.svg), linear-gradient(225deg, #111, #111);
-  background-position: 50% -2%, 50% 50%, 0px 0px;
+  background-position: 50% -3%, 50% 50%, 0px 0px;
   background-size: 100%, auto, auto;
   background-repeat: no-repeat, no-repeat, repeat;
 }
@@ -363,6 +410,23 @@ body {
   }
 }
 
+/* OUR Press
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.our-press ul {
+  font-size: 1.3rem;
+}
+
+.our-press ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-press ul i.fa {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
 /* OUR PARTNERS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section.our-partners {
@@ -407,8 +471,9 @@ section.our-partners p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -421,6 +486,8 @@ section.our-partners p {
   border-radius: 2px;
   padding: 12px;
   margin-bottom: 30px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 250px;
   z-index: 1;
   -webkit-transition: all 0.3s;
@@ -786,6 +853,8 @@ section.our-partners p {
   .team-block .team-member {
     padding: 10px;
     width: 40%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .join-us .ts-box-g {
     margin-top: 20px;
