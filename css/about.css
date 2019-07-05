@@ -333,7 +333,7 @@ section.document-links .btn {
 /* OUR History Intelligence
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-history {
-  background-image: url(../public/img/about_page/careers-desktop-bg2.svg), url(../public/img/about_page/careers-desktop-bg.svg), linear-gradient(225deg, #111, #111);
+  background-image: url(../public/img/about_page/careers-desktop-bg.svg), linear-gradient(225deg, #111, #111);
   background-position: 50% -3%, 50% 50%, 0px 0px;
   background-size: 100%, auto, auto;
   background-repeat: no-repeat, no-repeat, repeat;
