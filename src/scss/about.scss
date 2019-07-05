@@ -76,6 +76,9 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about-intro {
     background: linear-gradient(#000, #111);
+    h1 {
+        margin-top: 4rem;
+    }
     .intro-text {
         p {
             font: 2.4rem 'Open Sans', sans-serif;
@@ -102,18 +105,18 @@ body {
         > div {
             display: flex;
             flex-direction: column;
-            background-color: $color-gray-ts;
+            //background-color: $color-gray-ts;
             color: #fff;
             font-size: 1.4rem;
             height: 150px;
             margin: 10px;
-            box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
-            border: 3px solid #ccc;
+            //box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
+            // border: 3px solid #ccc;
             border-radius: 3px;
             transition: all 0.5s;
             justify-content: space-around;
             &:hover {
-                box-shadow: 0 4px 8px rgba(143, 143, 143, 0.9);
+                // box-shadow: 0 4px 8px rgba(143, 143, 143, 0.9);
                 transform: translateY(-5px);
                 color: $color-light-blue;
             }
@@ -127,7 +130,7 @@ body {
             width: 100px;
         }
         strong {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 }
@@ -238,8 +241,8 @@ body {
     background-repeat: repeat;
     background-size: 50%;
     .company-photo {
-        height: 60vh;
-        background-size: cover;
+        height: 90vh;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -508,12 +511,9 @@ section.our-partners {
             font-size: 9rem;
             position: absolute;
             top: 80px;
-            right: 150px;
+            right: 0;
             opacity: 0.3;
         }
-    }
-    .review-item {
-        width: 500px;
     }
     .review-slick-prev,
     .review-slick-next {
@@ -569,9 +569,16 @@ section.our-partners {
             right: 18%;
             height: 220px;
             width: 220px;
-            z-index: 2;
+            z-index: 1;
             animation: rotating 50s linear infinite;
             border: dashed 1px #fff;
+        }
+    }
+    .animated-link {
+        color: $color-light-white;
+        &:before,
+        &:after { 
+            border-color: $color-light-white;
         }
     }
 }
@@ -619,10 +626,33 @@ section.our-partners {
         }
     }
     .send-email {
-        padding: 40px 0;
-        font-size: 1.2rem;
+        padding: 30px 0;
+        font-size: 1.8rem;
         text-align: center;
-        line-height: 1.8;
+    }
+    .circle-container {
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+
+        .join-us-text {
+            background: rgba(1,1,1,0.7);
+            position: absolute;
+            left: 80px;
+            right: 120px;
+            top: 110px;
+            padding: 12px;
+            text-align: center;
+        }
+        .send-email {
+            font-size: 1.3rem;
+            padding: 10px 0 30px;
+        }
+    }
+    #circleslider4 .dot {
+        width: 100px;
+        height: 100px;
     }
 }
 

@@ -82,6 +82,10 @@ body {
   background: linear-gradient(#000, #111);
 }
 
+.about-intro h1 {
+  margin-top: 4rem;
+}
+
 .about-intro .intro-text p {
   font: 2.4rem 'Open Sans', sans-serif;
   text-align: center;
@@ -112,14 +116,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-size: 1.4rem;
   height: 150px;
   margin: 10px;
-  -webkit-box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
-          box-shadow: 0 1px 4px rgba(143, 143, 143, 0.9);
-  border: 3px solid #ccc;
   border-radius: 3px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -128,8 +128,6 @@ body {
 }
 
 .about-intro .achievments > div:hover {
-  -webkit-box-shadow: 0 4px 8px rgba(143, 143, 143, 0.9);
-          box-shadow: 0 4px 8px rgba(143, 143, 143, 0.9);
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: #7cb5ea;
@@ -147,7 +145,7 @@ body {
 }
 
 .about-intro .achievments strong {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @-webkit-keyframes changebluecolor {
@@ -300,8 +298,8 @@ body {
 }
 
 .company-intro .company-photo {
-  height: 60vh;
-  background-size: cover;
+  height: 90vh;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -646,12 +644,8 @@ section.our-partners p {
   font-size: 9rem;
   position: absolute;
   top: 80px;
-  right: 150px;
+  right: 0;
   opacity: 0.3;
-}
-
-.reviews .review-item {
-  width: 500px;
 }
 
 .reviews .review-slick-prev,
@@ -722,10 +716,18 @@ section.our-partners p {
   right: 18%;
   height: 220px;
   width: 220px;
-  z-index: 2;
+  z-index: 1;
   -webkit-animation: rotating 50s linear infinite;
           animation: rotating 50s linear infinite;
   border: dashed 1px #fff;
+}
+
+.reviews .animated-link {
+  color: #f1f1f1;
+}
+
+.reviews .animated-link:before, .reviews .animated-link:after {
+  border-color: #f1f1f1;
 }
 
 /* JOIN US
@@ -779,10 +781,40 @@ section.our-partners p {
 }
 
 .join-us .send-email {
-  padding: 40px 0;
-  font-size: 1.2rem;
+  padding: 30px 0;
+  font-size: 1.8rem;
   text-align: center;
-  line-height: 1.8;
+}
+
+.join-us .circle-container {
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+}
+
+.join-us .circle-container .join-us-text {
+  background: rgba(1, 1, 1, 0.7);
+  position: absolute;
+  left: 80px;
+  right: 120px;
+  top: 110px;
+  padding: 12px;
+  text-align: center;
+}
+
+.join-us .circle-container .send-email {
+  font-size: 1.3rem;
+  padding: 10px 0 30px;
+}
+
+.join-us #circleslider4 .dot {
+  width: 100px;
+  height: 100px;
 }
 
 /* animated link on hover
