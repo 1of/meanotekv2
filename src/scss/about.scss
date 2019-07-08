@@ -257,6 +257,7 @@ section.document-links {
     color: #111;
     .well {
         background-color: transparent;
+        box-shadow: none;
         padding: 19px 0;
         border-color: transparent;
         a {
@@ -265,7 +266,9 @@ section.document-links {
     }
     .btn {
         color: #111;
+        font-size: 1.3rem;
         background-color: transparent;
+        border: 1px solid $color-blue;
     }
 }
 

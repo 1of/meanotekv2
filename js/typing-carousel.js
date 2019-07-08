@@ -57,10 +57,10 @@ var TxtRotate = function(el, toRotate, period) {
 
   $('#collapseLinks').on('hidden.bs.collapse', function () {
     // do something…
-    $('.btn-collapse').text('Развернуть');
+    $('.btn-collapse').html("Развернуть <i class='fa fa-chevron-down' aria-hidden='true'></i>");
   });
   
   $('#collapseLinks').on('show.bs.collapse', function () {
     // do something…
-    $('.btn-collapse').text('Свернуть');
+    $('.btn-collapse').html("Свернуть <i class='fa fa-chevron-up' aria-hidden='true'></i>");
   });

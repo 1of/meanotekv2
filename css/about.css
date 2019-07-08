@@ -317,6 +317,8 @@ section.document-links {
 
 section.document-links .well {
   background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   padding: 19px 0;
   border-color: transparent;
 }
@@ -327,7 +329,9 @@ section.document-links .well a {
 
 section.document-links .btn {
   color: #111;
+  font-size: 1.3rem;
   background-color: transparent;
+  border: 1px solid #3a93c3;
 }
 
 /* OUR History Intelligence
