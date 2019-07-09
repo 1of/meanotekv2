@@ -416,9 +416,10 @@ section.document-links .btn {
 /* OUR Press
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-press {
-  background-image: url(../public/img/about_page/paper_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../public/img/about_page/careers-desktop-bg.svg);
+  background-position: 0% 100%;
+  background-repeat: repeat;
+  background-size: 60%;
 }
 
 .our-press ul {
@@ -567,9 +568,9 @@ section.our-partners p {
 .our-team:before {
   content: '';
   position: absolute;
-  width: 85%;
-  top: 10%;
-  right: 25%;
+  width: 100%;
+  top: 8%;
+  right: 0;
   height: 100%;
   background-image: url(../public/img/about_page/dotted-pattern.png);
   display: block;
@@ -793,9 +794,7 @@ section.our-partners p {
 }
 
 .join-us .send-email {
-  padding: 30px 0;
   font-size: 1.8rem;
-  text-align: center;
 }
 
 .join-us .circle-container {
@@ -827,6 +826,36 @@ section.our-partners p {
 .join-us #circleslider4 .dot {
   width: 100px;
   height: 100px;
+}
+
+.join-us .bg-cover {
+  display: block;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 1.8rem;
+}
+
+.join-us .big-image {
+  height: 470px;
+}
+
+.join-us .small-image {
+  height: 220px;
+}
+
+.join-us .join-us-text-block {
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* animated link on hover

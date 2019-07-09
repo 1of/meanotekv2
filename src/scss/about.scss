@@ -332,9 +332,10 @@ section.document-links {
 /* OUR Press
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-press {
-    background-image: url(../public/img/about_page/paper_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../public/img/about_page/careers-desktop-bg.svg);
+    background-position: 0% 100%;
+    background-repeat: repeat;
+    background-size: 60%;
     ul {
         font-size: 1.3rem;
         li {
@@ -445,9 +446,9 @@ section.our-partners {
     &:before {
         content: '';
         position: absolute;
-        width: 85%;
-        top: 10%;
-        right: 25%;
+        width: 100%;
+        top: 8%;
+        right: 0;
         height: 100%;
         background-image: url(../public/img/about_page/dotted-pattern.png);
         display: block;
@@ -633,9 +634,7 @@ section.our-partners {
         }
     }
     .send-email {
-        padding: 30px 0;
         font-size: 1.8rem;
-        text-align: center;
     }
     .circle-container {
         height: 800px;
@@ -660,6 +659,29 @@ section.our-partners {
     #circleslider4 .dot {
         width: 100px;
         height: 100px;
+    }
+    .bg-cover {
+        display: block;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-bottom: 1.8rem;
+    }
+    .big-image {
+        height: 470px;
+    }
+    .small-image {
+        height: 220px;
+    }
+    .join-us-text-block {
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .send-email {
+        }
+        .join-us-text {
+        }
     }
 }
 
