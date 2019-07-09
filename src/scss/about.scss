@@ -63,6 +63,7 @@ body {
     }
     p {
         font-size: 1.3rem;
+        padding-bottom: 10px;
     }
     .mb-10 {
         margin-bottom: 10px;
@@ -331,6 +332,9 @@ section.document-links {
 /* OUR Press
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .our-press {
+    background-image: url(../public/img/about_page/paper_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     ul {
         font-size: 1.3rem;
         li {
@@ -578,8 +582,9 @@ section.our-partners {
     }
     .animated-link {
         color: $color-light-white;
+        text-decoration: underline;
         &:before,
-        &:after { 
+        &:after {
             border-color: $color-light-white;
         }
     }
@@ -639,7 +644,7 @@ section.our-partners {
         padding-top: 200px;
 
         .join-us-text {
-            background: rgba(1,1,1,0.7);
+            background: rgba(1, 1, 1, 0.7);
             position: absolute;
             left: 80px;
             right: 120px;

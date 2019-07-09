@@ -65,6 +65,7 @@ body {
 
 .about-page p {
   font-size: 1.3rem;
+  padding-bottom: 10px;
 }
 
 .about-page .mb-10 {
@@ -414,6 +415,12 @@ section.document-links .btn {
 
 /* OUR Press
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.our-press {
+  background-image: url(../public/img/about_page/paper_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .our-press ul {
   font-size: 1.3rem;
 }
@@ -728,6 +735,7 @@ section.our-partners p {
 
 .reviews .animated-link {
   color: #f1f1f1;
+  text-decoration: underline;
 }
 
 .reviews .animated-link:before, .reviews .animated-link:after {
