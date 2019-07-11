@@ -337,13 +337,30 @@ section.document-links {
     background-repeat: repeat;
     background-size: 60%;
     ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         font-size: 1.3rem;
         li {
             display: flex;
-        }
-        i.fa {
-            padding-right: 20px;
-            padding-top: 5px;
+
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            color: #333;
+            width: 330px;
+            img {
+                display: block;
+                height: 185px;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .press-text {
+                font-size: 1.2rem;
+                p {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }
@@ -668,13 +685,13 @@ section.our-partners {
         margin-bottom: 1.8rem;
     }
     .big-image {
-        height: 470px;
+        height: 65vh;
     }
     .small-image {
-        height: 220px;
+        height: 30.5vh;
     }
     .join-us-text-block {
-        height: 470px;
+        height: 65vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
