@@ -606,8 +606,6 @@ section.our-partners p {
   background-size: 100% auto;
   width: 20%;
   height: 100%;
-  -webkit-animation: slide-bub 60s linear infinite;
-          animation: slide-bub 60s linear infinite;
   position: absolute;
   right: 0;
 }
@@ -730,32 +728,6 @@ section.our-partners p {
   padding: 10px 0;
 }
 
-.reviews .circle {
-  position: absolute;
-  border-radius: 100%;
-}
-
-.reviews .circle.strong-border {
-  top: 42%;
-  right: -15%;
-  border: 70px solid #3a93c3;
-  height: 800px;
-  width: 800px;
-  z-index: 1;
-  background: none;
-}
-
-.reviews .circle.dotted-border {
-  top: 45%;
-  right: 18%;
-  height: 220px;
-  width: 220px;
-  z-index: 1;
-  -webkit-animation: rotating 50s linear infinite;
-          animation: rotating 50s linear infinite;
-  border: dashed 1px #fff;
-}
-
 .reviews .animated-link {
   color: #f1f1f1;
   text-decoration: underline;
@@ -819,37 +791,6 @@ section.our-partners p {
   font-size: 1.8rem;
 }
 
-.join-us .circle-container {
-  height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 200px;
-}
-
-.join-us .circle-container .join-us-text {
-  background: rgba(1, 1, 1, 0.7);
-  position: absolute;
-  left: 80px;
-  right: 120px;
-  top: 110px;
-  padding: 12px;
-  text-align: center;
-}
-
-.join-us .circle-container .send-email {
-  font-size: 1.3rem;
-  padding: 10px 0 30px;
-}
-
-.join-us #circleslider4 .dot {
-  width: 100px;
-  height: 100px;
-}
-
 .join-us .bg-cover {
   display: block;
   background-size: cover;
@@ -863,7 +804,7 @@ section.our-partners p {
 }
 
 .join-us .small-image {
-  height: 30.5vh;
+  height: 30vh;
 }
 
 .join-us .join-us-text-block {

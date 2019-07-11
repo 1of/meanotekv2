@@ -5,6 +5,7 @@ $(document).ready(function() {
     });
     observer.observe();
 
+    //Слайдер наших клиентов
     $('#partnership').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -23,7 +24,7 @@ $(document).ready(function() {
             }
         ]
     });
-
+    //Слайдер отзывов
     $('.reviews-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -34,19 +35,16 @@ $(document).ready(function() {
         nextArrow: $('.review-slick-next')
     });
 
-    //Count years
+    //Кнопки Свернуть-Развернуть
+    $('#collapseLinks').on('hidden.bs.collapse', function() {
+        $('.btn-collapse').html(
+            "Развернуть <i class='fa fa-chevron-down' aria-hidden='true'></i>"
+        );
+    });
 
-    $('.anim-years-count').each(function() {
-        var $this = $(this);
-        $({ Counter: 0 }).animate(
-            { Counter: $this.text() },
-            {
-                duration: Math.round(+Math.random().toFixed(3) * 5000 + 1000),
-                easing: 'swing',
-                step: function() {
-                    $this.text(Math.ceil(this.Counter));
-                }
-            }
+    $('#collapseLinks').on('show.bs.collapse', function() {
+        $('.btn-collapse').html(
+            "Свернуть <i class='fa fa-chevron-up' aria-hidden='true'></i>"
         );
     });
 });

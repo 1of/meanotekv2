@@ -1,3 +1,3 @@
-To compile and watch sass run: 
+To compile and watch scss run: 
 
 sass --watch src/scss/:css/
