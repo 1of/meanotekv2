@@ -800,15 +800,15 @@ section.our-partners p {
 }
 
 .join-us .big-image {
-  height: 65vh;
+  height: 404px;
 }
 
 .join-us .small-image {
-  height: 30vh;
+  height: 188px;
 }
 
 .join-us .join-us-text-block {
-  height: 65vh;
+  height: 404px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,5 +904,20 @@ section.our-partners p {
   }
   .join-us .photos-join-us .join-us-text {
     width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .about-page p {
+    font-size: 1.1rem;
+  }
+  section.join-us {
+    padding-bottom: 0;
+  }
+  section.join-us .col-xs-6 {
+    width: 100%;
+  }
+  section.join-us .big-image {
+    height: 188px;
   }
 }

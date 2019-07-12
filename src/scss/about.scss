@@ -639,13 +639,13 @@ section.our-partners {
         margin-bottom: 1.8rem;
     }
     .big-image {
-        height: 65vh;
+        height: 404px;
     }
     .small-image {
-        height: 30vh;
+        height: 188px;
     }
     .join-us-text-block {
-        height: 65vh;
+        height: 404px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -740,6 +740,21 @@ section.our-partners {
             .join-us-text {
                 width: 80%;
             }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .about-page p {
+        font-size: 1.1rem;
+    }
+    section.join-us {
+        padding-bottom: 0;
+        .col-xs-6 {
+            width: 100%;
+        }
+        .big-image {
+            height: 188px;
         }
     }
 }
